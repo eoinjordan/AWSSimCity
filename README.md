@@ -34,6 +34,16 @@ simulation. No cost, SLA, real failover, or hardware performance is estimated.
   supply context, not simulation coefficients. Autoscaling, retries, health
   checks, database replication, authentication, and durability are omitted.
 
+## Recorded Preview
+
+The GIF steps through normal service, AZ B failure, a database stall, and recovery.
+The recording checks the visible status and request conservation after every step.
+No cloud account is connected and the failures are model interventions.
+
+The 24 frames play at 3 fps with edited model progression, not real service timing.
+[Recording metadata](docs/media/recording.json) retains the capture date,
+source/build/GIF hashes, controls, observed metrics, and desktop/mobile checks.
+
 ## Run And Verify
 
 Node.js 24 is used in CI. All runtime assets, including fonts, are bundled locally.
@@ -64,3 +74,5 @@ there is no cross-repository runtime dependency.
 
 Health-check delay, retry budgets, cache keys, and a causal autoscaling policy
 need separate model fixtures before being presented as supported behavior.
+The [upgrade issue](https://github.com/eoinjordan/AWSSimCity/issues/1) tracks
+those changes and the separately authorized, read-only telemetry proposal.

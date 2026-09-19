@@ -1,0 +1,354 @@
+{
+  "schema": "simcities-recording/v2",
+  "kind": "illustrative-model-recording",
+  "folder": "AWSSimCity",
+  "frames": 24,
+  "playbackFramesPerSecond": 3,
+  "timing": "Edited model progression, not wall-clock hardware performance",
+  "gif": "demo.gif",
+  "gifSha256": "75ee8ddf7354a80535527c82d58efdbb638c1f7d99c1ddad0262a52fd3a05367",
+  "desktop": [
+    1280,
+    800
+  ],
+  "mobile": [
+    390,
+    844
+  ],
+  "changedCanvasPixels": 99439,
+  "pageErrors": 0,
+  "mobileOverflow": false,
+  "scenario": "Model requests under the baseline, AZ B failure, database stall, and recovery, checking request conservation after each step.",
+  "observations": [
+    {
+      "frame": 0,
+      "status": "THREE ZONES AVAILABLE",
+      "metrics": [
+        {
+          "id": "metric-arrivals",
+          "value": "4"
+        },
+        {
+          "id": "metric-completed",
+          "value": "0"
+        },
+        {
+          "id": "metric-rejected",
+          "value": "0"
+        },
+        {
+          "id": "metric-inflight",
+          "value": "4"
+        }
+      ],
+      "controls": [
+        {
+          "id": "control-arrivals",
+          "value": "4"
+        },
+        {
+          "id": "control-replicas",
+          "value": "2"
+        },
+        {
+          "id": "control-cache",
+          "value": true
+        }
+      ]
+    },
+    {
+      "frame": 3,
+      "status": "THREE ZONES AVAILABLE",
+      "metrics": [
+        {
+          "id": "metric-arrivals",
+          "value": "16"
+        },
+        {
+          "id": "metric-completed",
+          "value": "4"
+        },
+        {
+          "id": "metric-rejected",
+          "value": "0"
+        },
+        {
+          "id": "metric-inflight",
+          "value": "12"
+        }
+      ],
+      "controls": [
+        {
+          "id": "control-arrivals",
+          "value": "4"
+        },
+        {
+          "id": "control-replicas",
+          "value": "2"
+        },
+        {
+          "id": "control-cache",
+          "value": true
+        }
+      ]
+    },
+    {
+      "frame": 6,
+      "status": "ZONE DEGRADED",
+      "metrics": [
+        {
+          "id": "metric-arrivals",
+          "value": "28"
+        },
+        {
+          "id": "metric-completed",
+          "value": "13"
+        },
+        {
+          "id": "metric-rejected",
+          "value": "2"
+        },
+        {
+          "id": "metric-inflight",
+          "value": "13"
+        }
+      ],
+      "controls": [
+        {
+          "id": "control-arrivals",
+          "value": "4"
+        },
+        {
+          "id": "control-replicas",
+          "value": "2"
+        },
+        {
+          "id": "control-cache",
+          "value": true
+        }
+      ]
+    },
+    {
+      "frame": 9,
+      "status": "ZONE DEGRADED",
+      "metrics": [
+        {
+          "id": "metric-arrivals",
+          "value": "40"
+        },
+        {
+          "id": "metric-completed",
+          "value": "19"
+        },
+        {
+          "id": "metric-rejected",
+          "value": "2"
+        },
+        {
+          "id": "metric-inflight",
+          "value": "19"
+        }
+      ],
+      "controls": [
+        {
+          "id": "control-arrivals",
+          "value": "4"
+        },
+        {
+          "id": "control-replicas",
+          "value": "2"
+        },
+        {
+          "id": "control-cache",
+          "value": true
+        }
+      ]
+    },
+    {
+      "frame": 12,
+      "status": "DATABASE STALLED",
+      "metrics": [
+        {
+          "id": "metric-arrivals",
+          "value": "52"
+        },
+        {
+          "id": "metric-completed",
+          "value": "25"
+        },
+        {
+          "id": "metric-rejected",
+          "value": "2"
+        },
+        {
+          "id": "metric-inflight",
+          "value": "25"
+        }
+      ],
+      "controls": [
+        {
+          "id": "control-arrivals",
+          "value": "4"
+        },
+        {
+          "id": "control-replicas",
+          "value": "2"
+        },
+        {
+          "id": "control-cache",
+          "value": true
+        }
+      ]
+    },
+    {
+      "frame": 15,
+      "status": "DATABASE STALLED",
+      "metrics": [
+        {
+          "id": "metric-arrivals",
+          "value": "64"
+        },
+        {
+          "id": "metric-completed",
+          "value": "30"
+        },
+        {
+          "id": "metric-rejected",
+          "value": "6"
+        },
+        {
+          "id": "metric-inflight",
+          "value": "28"
+        }
+      ],
+      "controls": [
+        {
+          "id": "control-arrivals",
+          "value": "4"
+        },
+        {
+          "id": "control-replicas",
+          "value": "2"
+        },
+        {
+          "id": "control-cache",
+          "value": true
+        }
+      ]
+    },
+    {
+      "frame": 18,
+      "status": "THREE ZONES AVAILABLE",
+      "metrics": [
+        {
+          "id": "metric-arrivals",
+          "value": "76"
+        },
+        {
+          "id": "metric-completed",
+          "value": "35"
+        },
+        {
+          "id": "metric-rejected",
+          "value": "12"
+        },
+        {
+          "id": "metric-inflight",
+          "value": "29"
+        }
+      ],
+      "controls": [
+        {
+          "id": "control-arrivals",
+          "value": "4"
+        },
+        {
+          "id": "control-replicas",
+          "value": "2"
+        },
+        {
+          "id": "control-cache",
+          "value": true
+        }
+      ]
+    },
+    {
+      "frame": 21,
+      "status": "THREE ZONES AVAILABLE",
+      "metrics": [
+        {
+          "id": "metric-arrivals",
+          "value": "88"
+        },
+        {
+          "id": "metric-completed",
+          "value": "43"
+        },
+        {
+          "id": "metric-rejected",
+          "value": "14"
+        },
+        {
+          "id": "metric-inflight",
+          "value": "31"
+        }
+      ],
+      "controls": [
+        {
+          "id": "control-arrivals",
+          "value": "4"
+        },
+        {
+          "id": "control-replicas",
+          "value": "2"
+        },
+        {
+          "id": "control-cache",
+          "value": true
+        }
+      ]
+    },
+    {
+      "frame": 23,
+      "status": "THREE ZONES AVAILABLE",
+      "metrics": [
+        {
+          "id": "metric-arrivals",
+          "value": "96"
+        },
+        {
+          "id": "metric-completed",
+          "value": "49"
+        },
+        {
+          "id": "metric-rejected",
+          "value": "16"
+        },
+        {
+          "id": "metric-inflight",
+          "value": "31"
+        }
+      ],
+      "controls": [
+        {
+          "id": "control-arrivals",
+          "value": "4"
+        },
+        {
+          "id": "control-replicas",
+          "value": "2"
+        },
+        {
+          "id": "control-cache",
+          "value": true
+        }
+      ]
+    }
+  ],
+  "sourceCommit": "145d0010add13c7ce321da7811657f3fcba9e89f",
+  "sourceInputSha256": "bb0491f67baea9d3d79f4fbdc4fd88d0d5c651823725e197a1a35555fb3b69df",
+  "buildIndexSha256": "fabe60d75a5749dbec89d71ba0c0bec6a109c8257a4da04c67e4f795ee5884b8",
+  "recorder": "tools/record-previews.mjs",
+  "recorderSha256": "2645878b59e2ccebf6f662dc6fa60b73632786a554993295635bef0b1eec559b",
+  "recordedAt": "2026-09-19T17:03:47.767Z"
+}
